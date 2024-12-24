@@ -1,0 +1,14 @@
+{
+  "name": "nlstc-css",
+  "version": "2.0.0",
+  "description": "A light-weight utility-first responsive CSS library",
+  "main": "util.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Spandan Mukherjee",
+  "license": "ISC",
+  "keywords": [
+    "CSS"
+  ]
+}
