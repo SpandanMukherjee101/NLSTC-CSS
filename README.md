@@ -8,7 +8,7 @@ A lightweight CSS utility library for margins, paddings, flexbox layouts, text a
 Install via npm:
 
 ```bash
-npm install css-utility-classes
+npm i nlstc-css
 ```
 
 ## Usage
