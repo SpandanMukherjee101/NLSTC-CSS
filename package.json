@@ -1,6 +1,6 @@
 {
   "name": "nlstc-css",
-  "version": "2.0.0",
+  "version": "4.0.0",
   "description": "A light-weight utility-first responsive CSS library",
   "main": "util.css",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "Spandan Mukherjee",
   "license": "ISC",
   "keywords": [
-    "CSS"
+    "CSS",
+    "css"
   ]
 }
