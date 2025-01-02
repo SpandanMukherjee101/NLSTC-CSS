@@ -17,12 +17,12 @@ Import the CSS file in your project:
 
 ### In HTML
 ```html
-<link rel="stylesheet" href="node_modules/util.css">
+<link rel="stylesheet" href="node_modules/nlstc.css">
 ```
 
 ### In JavaScript/TypeScript
 ```javascript
-import 'util.css';
+import 'nlstc.css';
 ```
 
 ## Features
