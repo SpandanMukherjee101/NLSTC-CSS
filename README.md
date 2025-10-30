@@ -41,7 +41,7 @@ Examples:
 ### Responsive Variants
 Use `sm`, `md`, `lg`, and `xl` for responsive spacing:
 ```html
-<div class="m-sm-4px m-lg-32px">Responsive Spacing</div>
+<div class="m-sm-4px mt-lg-32px">Responsive Spacing</div>
 ```
 
 ### Flexbox Utilities
@@ -56,15 +56,30 @@ Use `sm`, `md`, `lg`, and `xl` for responsive spacing:
 - `.font-bold`, `.font-normal`, `.font-light`: Font weights.
 
 ### Animations
-Predefined animations for basic effects:
-- `.fade-in`: Fade in effect.
-- `.spin`: Rotating effect.
-- `.bounce`: Bounce effect.
-- `.slide-in`: Slide in effect.
-- `.zoom-in`: Zoom in effect.
-- `.zoom-out`: Zooom out effect.
-- `.shake`: Shake effect.
-- `.pulse`: Pulse effect.
+Predefined animations for various visual effects:
+
+- `.fade-in`: Fade in effect.  
+- `.spin`: Rotating effect.  
+- `.bounce`: Bounce effect.  
+- `.slide-in`: Slide in from the left.  
+- `.zoom-in`: Zoom in effect.  
+- `.zoom-out`: Zoom out effect.  
+- `.shake`: Shake horizontally.  
+- `.pulse`: Smooth pulsing effect.  
+- `.rotate-in`: Rotates while fading in.  
+- `.flip`: 3D flip rotation effect.  
+- `.slide-down`: Slides down from the top.  
+- `.slide-up`: Slides up from the bottom.  
+- `.wobble`: Wobbles side to side with rotation.  
+- `.bounce-in`: Bounces into view with scaling.  
+- `.flash`: Repeated flashing effect.  
+- `.swing`: Swings back and forth.  
+- `.fade-in-down`: Fades in while sliding down.  
+- `.fade-out-up`: Fades out while sliding upward.  
+- `.heartbeat`: Heartbeat-like pulsing effect.  
+- `.rubber-band`: Stretchy elastic effect.  
+- `.light-speed-in`: Slides in quickly with a skewed light-speed effect.  
+- `.light-speed-out`: Slides out quickly with a skewed light-speed exit.
 
 ```html
 <div class="fade-in">Fades in on load</div>
