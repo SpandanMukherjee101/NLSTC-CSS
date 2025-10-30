@@ -1,6 +1,6 @@
 {
   "name": "nlstc-css",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "A light-weight utility-first responsive CSS library",
   "main": "util.css",
   "scripts": {
