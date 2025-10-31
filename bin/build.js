@@ -2,7 +2,7 @@
 
 import fs from "fs";
 import path from "path";
-import PurgeCSS from "purgecss";
+import { PurgeCSS } from "purgecss"; // v4+ uses named import
 
 // Input and output paths
 const inputCSS = path.resolve("nlstc.css");
@@ -19,22 +19,19 @@ if (!fs.existsSync(outputDir)) {
 
 // Run PurgeCSS
 (async () => {
-  // Default paths to scan for used classes
   const content = ["./**/*.html", "./**/*.{js,jsx,ts,tsx}"];
-
-  // Location of your CSS inside the package
   const inputFile = path.resolve("node_modules/nlstc-css/nlstc.css");
 
   console.log("🔍 Running PurgeCSS on nlstc.css...");
 
   try {
-    const purgeCSSResult = await new PurgeCSS().purge({
+    const purgeCSSResult = await PurgeCSS.purge({
       content,
       css: [inputFile],
     });
 
-    fs.writeFileSync(outputFile, purgeCSSResult[0].css);
-    console.log(`✅ Purged CSS written to: ${outputFile}`);
+    fs.writeFileSync(outputPath, purgeCSSResult[0].css);
+    console.log(`✅ Purged CSS written to: ${outputPath}`);
   } catch (err) {
     console.error("❌ PurgeCSS failed:", err);
     process.exit(1);
