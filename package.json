@@ -2,14 +2,25 @@
   "name": "nlstc-css",
   "version": "5.0.0",
   "description": "A light-weight utility-first responsive CSS library",
-  "main": "util.css",
+  "main": "nlstc.css",
+  "type": "module",
+  "bin": {
+    "nlstc": "./bin/build.js"
+  },
   "scripts": {
+    "nlstc:build": "node ./bin/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Spandan Mukherjee",
   "license": "ISC",
   "keywords": [
     "CSS",
-    "css"
-  ]
+    "utility",
+    "responsive",
+    "animation",
+    "purgecss"
+  ],
+  "dependencies": {
+    "purgecss": "^7.0.2"
+  }
 }
