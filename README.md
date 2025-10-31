@@ -13,16 +13,33 @@ npm i nlstc-css
 
 ## Usage
 
-Import the CSS file in your project:
+You can generate a minified CSS file that only includes used classes:
+
+```bash
+npx nlstc build
+```
 
 ### In HTML
 ```html
-<link rel="stylesheet" href="node_modules/nlstc.css">
+<link rel="stylesheet" href="./nlstc.min.css">
+```
+
+```html
+<!-- Or directly from node_modules (not recommended for production) -->
+<link rel="stylesheet" href="node_modules/nlstc-css/nlstc.css">
 ```
 
 ### In JavaScript/TypeScript
 ```javascript
-import 'nlstc.css';
+import './nlstc.min.css';
+```
+
+### Optional: Naming Output CSS
+
+To create a smaller CSS file containing only classes actually used in your project, but with your custom path and filename:
+
+```bash
+npx nlstc build --out "./dist/your_name.css"
 ```
 
 ## Features
