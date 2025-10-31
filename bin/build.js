@@ -11,7 +11,7 @@ const outputFile = outIndex !== -1 ? args[outIndex + 1] : './nlstc.min.css'
 // Default paths to scan for used classes
 const content = [
   './**/*.html',
-  './src/**/*.{js,jsx,ts,tsx}',
+  './**/*.{js,jsx,ts,tsx}',
 ]
 
 // Location of your CSS inside the package
